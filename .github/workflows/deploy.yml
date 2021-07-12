@@ -20,4 +20,4 @@ jobs:
       - run: npm ci
       - run: gulp build
       # Deploy
-      - run: cd web && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . p87435@hostru08.fornex.com:/home/p87435/public_html/postmaxxx.ru
+      - run: cd web && rsync -e "ssh -p 20022 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . p87435@hostru08.fornex.host:/home/p87435/public_html/postmaxxx.ru
