@@ -1,0 +1,53 @@
+{% extends "../_layout.twig" %};
+
+{% set pageTitle = 'Main page' %}
+
+
+
+{% block header %}
+    {{ parent() }}
+{% endblock header %}
+
+
+
+{% block content %}
+    <div class="index__content-container">
+        {% include "../components/_section_hero.twig" %}
+    </div>
+{% endblock content %} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block footer %}
+    {{ parent() }}
+    <p> and more...</p>
+{% endblock footer %} 
+
+
+
+{% block scripts %}
+    <script src='./assets/js/index.js'></script>
+{% endblock scripts %} 

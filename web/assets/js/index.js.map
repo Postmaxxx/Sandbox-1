@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["index.js"],"sourcesContent":["let logoImg = document.querySelector('.main-text')\r\n\r\nlogoImg.addEventListener('click', (e) => changeText(e));\r\n\r\nconst changeText = (e) => {\r\n    e.target.innerHTML += '!';\r\n    console.log(e.target);\r\n}\r\n"],"file":"index.js"}

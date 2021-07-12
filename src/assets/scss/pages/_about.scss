@@ -1,0 +1,39 @@
+.about__content-container {
+    width: 100vw;
+    height: 50vh;
+    background-color: #999;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        font: {
+            family: Arial;
+            size: 30px;
+            style: bold;
+        }
+        cursor: pointer;
+
+    }
+
+    /*img {
+        width: 50px;
+        height: 50px;
+    }*/
+}
+
+.noExistEl {
+    width: 100%;
+}
+
+.tst {
+    font-size: 30px;
+}
+
+
+
+.spec-font {
+    font-size: 30px;
+    font-family: 'RussianPunk';
+}

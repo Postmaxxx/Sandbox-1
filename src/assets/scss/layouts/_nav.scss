@@ -1,0 +1,138 @@
+.nav {
+    height: 100%;
+    width: 550px;
+    margin-left: 70px;
+    margin-right: auto; 
+    box-sizing: border-box;
+
+
+    &_full {
+        height: 100%;
+        width: 100%;
+
+        &__items-list {
+            margin: 0; 
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            @include respond-to(sm) {
+                & {
+                    display: none;
+                }
+            }
+        }
+    
+        &__item a {
+           text-decoration: none;
+           color: $gray;
+           /*text-transform: uppercase;*/
+        }
+
+    } //full
+
+
+    &_ham {
+        display: none;
+    }
+
+
+    @include respond-to(sm) {
+        & {
+            order: -1;
+            height: 100%;
+            width: 120px;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        &_full {
+            display: none;
+        }
+
+        &_ham {
+            display: block;
+            min-height: 100%;
+            width: 200px;
+            background-image: url('https://img.icons8.com/ultraviolet/120/000000/menu--v1.png');
+            background-size: 80px 80px;
+            background-position: left top;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            //border: 3px solid red;
+            box-sizing: border-box;
+            padding: 0;// 10px;
+            
+            &__items-list {
+               // display: none;
+                list-style-type: none;
+                padding: 0;
+                padding-top: 87px;;
+                margin: 0;
+                transform: scaleY(0);
+                transform-origin: 0 87px;
+                transition: .3s;
+                opacity: 0;
+            }
+
+            &__item{
+                color: #333;
+                height: 70px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 10px;
+                box-sizing: border-box;
+                background-color: $gray;
+
+
+                & a {
+                    text-decoration: none;
+                    color: $dark-blue;
+                    text-transform: uppercase;
+                    font-size: 24px;
+                }
+            }
+            
+
+
+            &:hover {
+                .nav_ham__items-list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    position: relative;
+                    transition: .5s;
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+
+                .nav_ham__item:hover {
+                    background-color: $blue-06;
+                    & a {
+                        color: $grey-bg;
+                    }
+                }
+
+
+
+            }
+
+
+        }
+
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.header {
+    max-width: $site-width;
+    height: 87px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+    background-color: $grey-bg;
+
+    &-container {
+        height: 87px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly; 
+    }
+
+    &__logo {
+        height: 100%;
+    }
+
+
+    &__btn_request {
+        @extend .btn_type-1;
+        border-color: $border !important;
+        /*margin-left: auto;*/
+        margin-right: auto;
+    }
+ 
+}
+
+
+@include respond-to(sm) {
+    .header__logo {
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["about.js"],"sourcesContent":["let logoImg = document.querySelector('.main__img')\r\n\r\nlogoImg.addEventListener('click', (eventing) => changeImg(eventing));\r\n\r\n\r\nconst changeImg = (event) => { \r\n    console.log(event.target);\r\n}"],"file":"about.js"}
