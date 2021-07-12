@@ -1,2 +1,1 @@
-setInterval(() => console.log('Layout ping'), 1000)
-//# sourceMappingURL=layout.js.map
+setInterval(()=>console.log("Layout ping"),1e3);
